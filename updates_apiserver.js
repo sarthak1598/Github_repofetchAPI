@@ -55,6 +55,7 @@ app.get('/api/findrepos' , (req , res) => {
               // res.send(json.array.length) ;
           console.log("Repository list") ; 
      // updated fetch method with for-each loop over json array 
+	
         json.forEach( (val) => {
 		console.log(val.name) ;
 	       myjson += val.name  + " " + " , " ;  	
@@ -63,7 +64,7 @@ app.get('/api/findrepos' , (req , res) => {
 		res.json(myjson) ; 
 	}) 
 	  .catch(function(error){
-              res.send("Repository does'nt exist in database"); 
+              res.send("Entered Repository does'nt exist in the database !! "); 
  }) ;  
 	} 
 }); 
