@@ -1,10 +1,13 @@
 # Github_repofetchAPI
 An Nodejs/Express  based API to fetch the repositories available by the respective organisations.  
 
-API documentation: Endpoints
 
-1.http://localhost:5000/api/home --->> API home page .   
+API Endpoints : 
 
-2.http://localhost:5000/api/organisations --->> Fetches available organisations as string in HTTP response .  
+GET : /localhost:5000/api/home --->> API home page .   
 
-3.http://localhost:5000/api/findrepos?orgname={type organisation name}
+GET : /localhost:5000/api/organisations --->> Fetches available organisations as string in HTTP response .  
+
+GET : /localhost:5000/api/findrepos?orgname={organisation name} -->> Query as organisation name.
+
+Run : nodejs server.js 
